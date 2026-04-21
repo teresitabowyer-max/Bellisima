@@ -80,10 +80,12 @@
     overflow: hidden; background: var(--orange);
     box-shadow: 0 24px 64px rgba(255,107,26,.22);
     display: flex; align-items: center; justify-content: center;
+    padding: 2rem;
   }
-  .hero-image .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-image .img-wrap img { width: 100%; height: 100%; object-fit: contain; display: block; }
   .hero-logo-hero {
-    width: 70%; max-width: 260px;
+    width: 85%; max-width: 320px;
+    object-fit: contain;
     filter: drop-shadow(0 4px 24px rgba(0,0,0,.18));
   }
   .hero-stat {
@@ -290,55 +292,68 @@
   </div>
   <div class="gallery" id="gallery">
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-20.jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-20.jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph tall" style="display:none">✂️</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-20 (3).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-20 (3).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph short" style="display:none">💅</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-10 (1).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-10 (1).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph med" style="display:none">🎨</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-10 (2).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-10 (2).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph short" style="display:none">🌿</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-10 (3).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-10 (3).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph tall" style="display:none">🌸</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-10 (4).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-10 (4).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph med" style="display:none">👑</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-10 (5).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-10 (5).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph short" style="display:none">✨</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-10 (6).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-10 (6).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph tall" style="display:none">💆‍♀️</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-10 (7).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-10 (7).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph med" style="display:none">🌙</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-10.jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-10.jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph short" style="display:none">💇‍♀️</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-20 (1).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-20 (1).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph med" style="display:none">🌺</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/2026-02-20 (2).jpg" alt="Trabajo Bellisima">
+      <img src="2026-02-20 (2).jpg" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph tall" style="display:none">🪷</div>
       <div class="gallery-overlay"></div>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="fotos/videoframe_0.png" alt="Trabajo Bellisima">
+      <img src="videoframe_0.png" alt="Trabajo Bellisima" onerror="this.parentElement.querySelector('.gph-fb').style.display='flex';this.style.display='none'">
+      <div class="gph-fb gph short" style="display:none">🎬</div>
       <div class="gallery-overlay"></div>
     </div>
   </div>
